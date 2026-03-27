@@ -1,40 +1,54 @@
-/* Reset padrão que você já tem */
-*{
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Fundo da página */
 body {
-    min-height: 100vh;
-    background-image: url("../images/suporteTI.jpg"); /* */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    display: flex;
-    flex-direction: column;
-    
-    /* TROCA AQUI: 'flex-start' alinha no topo */
-    justify-content: flex-start; 
-    align-items: center;
+    background-color: #e6f0ff; /* azul bem claro */
+    font-family: Arial, sans-serif;
     text-align: center;
-
-    /* CONTROLE DE ALTURA: Ajuste esse valor para subir ou descer tudo */
-    padding-top: 10vh; /* 10% da altura da tela (mude para 5vh se quiser MAIS alto) */
+    padding: 20px;
 }
 
+/* Título principal */
 h1 {
-    font-size: 2.2rem; /* */
-    color: black;
-    margin-bottom: 15px;
-    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8);
+    color: #003366; /* azul escuro */
+    margin-bottom: 10px;
 }
 
+/* Subtítulos */
+h2 {
+    color: #0055aa;
+    margin-top: 15px;
+}
+
+/* Texto */
 p {
-    font-size: 1.1rem;
-    color: black;
-    max-width: 800px;
-    line-height: 1.4;
-    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.8);
+    text-align: center;   /* centraliza o texto */
+    max-width: 600px;     /* limita a largura */
+    margin: 10px auto;
+}
+
+/* Links */
+a {
+    color: #cc0000; /* vermelho */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Lista */
+li {
+    color: #222;
+    margin: 5px 0;
+}
+
+a {
+    display: block;
+    margin: 5px 0;
 }
