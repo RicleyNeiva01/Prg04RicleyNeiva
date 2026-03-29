@@ -1,25 +1,43 @@
-# prg04RicleyNeiva
+🛠️ DeskFlow | Sistema de Suporte Técnico de TI
 
-O projeto de Suporte de TI é organizado da seguinte forma:
+O DeskFlow é uma aplicação web que simula um sistema de suporte técnico de TI, permitindo que usuários registrem chamados, acompanhem o andamento dos atendimentos e que técnicos gerenciem e resolvam problemas de forma prática e organizada.
 
-## Infraestructure
+Este projeto está sendo desenvolvido para a disciplina de Programação Web, com o objetivo de construir uma aplicação completa ao longo do semestre.
 
-Contém a base e estrutura do projeto.
+📁 Estrutura do Projeto
+infrastructure
 
-### assets
+Parte onde ficam os arquivos principais e recursos usados no projeto inteiro.
 
-Arquivos estáticos utilizados na aplicação
+/assets
+css/ → Arquivos de estilização do sistema
+fonts/ → Fontes utilizadas no projeto
+images/ → Imagens e ícones (incluindo favicon)
+js/ → Scripts JavaScript
+/pages
+dashboard/ → Página principal do sistema
+chamados/ → Listagem de chamados
+novo-chamado/ → Abertura de chamado
+detalhes/ → Visualização do chamado
+index.html → Página inicial do projeto (login ou entrada)
 
-* *css*
-    * style.css: Arquivo responsável pela estilização da página.
-* *images*
-    * Favicon.png: Ícone exibido na aba do navegador.
-    * suporteTI.jpg: Imagem utilizada na página inicial como fundo.
+⚙️ Funcionalidades
 
-### pages
+O sistema permitirá que o usuário:
 
-* index.html: Página principal do projeto de Suporte.
+Criar chamados de suporte técnico
+Informar título, descrição e categoria
+Visualizar todos os chamados
+Acompanhar o status (aberto, em andamento, resolvido)
+Atualizar o status do chamado
+Visualizar detalhes do atendimento
+Filtrar chamados por status
 
-## README.md
-
-Arquivo de documentação do projeto.
+🛠️ Serviços Disponíveis
+Manutenção de computadores
+Problemas de rede e internet
+Suporte a software
+Problemas de login e acesso
+Remoção de vírus
+Suporte a hardware
+Configuração de sistemas
