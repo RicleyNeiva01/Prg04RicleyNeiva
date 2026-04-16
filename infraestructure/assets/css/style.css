@@ -36,7 +36,7 @@ header {
 h1 {
     color: var(--branco);
     margin-bottom: 10px;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     text-shadow: 0 0 15px rgba(5, 187, 208, 0.4); /* Efeito neon */
 }
 
@@ -58,8 +58,9 @@ p {
 /* Main */
 main {
     width: 100%;
+    max-width: 800px;
+    min-width: 400px;
     margin: 0 auto;
-    padding: 0 5px;
 }
 
 /* Seções */
@@ -101,15 +102,13 @@ nav#menu ul {
     list-style: none;
     padding: 0;
     margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
 
 /*Formatação dos itens*/
 nav#menu li {   
+    display: inline-block;
     padding: 10px 15px;
-    margin: 0;
+    margin: 2px;
     transition: background-color 1s;
     border-radius: 4px;
 }
@@ -195,7 +194,6 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    font-size: 12px;
 }
 
 th {
@@ -209,60 +207,11 @@ td {
     border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
-td .btn {
-    display: block;
-    width: 100%;
-    margin: 5px 0;
-}
-
 tr:hover {
     background-color: rgba(255,255,255,0.05);
 }
 
 .excluir {
     background-color: #d90429;
-    color: var(--branco);
-}
-
-/*Responsividade para tablet*/
-@media (min-width: 601px) {
-
-    main {
-        max-width: 700px;
-    }
-
-    h1 {
-        font-size: 2.2rem;
-    }
-
-    table {
-        font-size: 14px;
-    }
-
-}
-
-/*Responsividade de desktop*/
-@media (min-width: 1025px){
-    
-    td .btn {
-    display: inline-block; 
-    width: auto;           
-}
-
-    nav#menu ul {
-        flex-direction: row; 
-        justify-content: center;
-    }
-
-    main{
-        max-width: 900px;
-    }
-
-    h1{
-        font-size: 2.5rem;
-    }
-
-    table{
-        font-size: 16px;
-    }
+    color: var(--brano);
 }
