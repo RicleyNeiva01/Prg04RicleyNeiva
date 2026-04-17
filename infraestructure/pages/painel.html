@@ -5,21 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel Administrativo</title>
 
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--CSS-->
     <link rel="stylesheet" href="../assets/css/style.css">
 
 </head>
 <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">🛠️ DeskFlow</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="painel.html">Painel</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!--Cabeçalho-->
-    <header>
+    <header class="text-center py-3">
         <h2>Painel Administrativo</h2>
     </header>
     
     <!--Principal-->
-    <main>
+    <main class="container mt-5">
         <!--Seções-->
         <section>
             <!--Tabela-->
-            <table>
+            <table class="table table-striped table-hover">
                 <!--Cabeçalho da Tabela-->
                 <thead>
                     <!--linha de cada tabela-->
@@ -27,6 +49,7 @@
                         <th>ID</th>
                         <th>Nome</th>
                         <th>Email</th>
+                        <th>Status</th>
                         <th>Ações</th>
                     </tr>
                 </thead>
@@ -36,9 +59,10 @@
                         <td>1</td>
                         <td>Ricley Neiva</td>
                         <td>ricley44@gmail.com</td>
+                        <td><span class="badge bg-success">Ativo</span></td>
                         <td>
-                            <button class="btn">Editar</button>
-                            <button class="btn excluir">Excluir</button>
+                            <button class=" btn btn-custom btn-sm btn-primary">Editar</button>
+                            <button class="btn-custom excluir btn-sm">Excluir</button>
                         </td>
                     </tr>
 
@@ -46,9 +70,10 @@
                         <td>2</td>
                         <td>Geovana Bastos</td>
                         <td>geovana22@gmail.com</td>
+                        <td><span class="badge bg-success">Ativo</span></td>
                         <td>
-                            <button class="btn">Editar</button>
-                            <button class="btn excluir">Excluir</button>
+                            <button class="btn btn-custom btn-sm btn-primary">Editar</button>
+                            <button class="btn-custom excluir btn-sm">Excluir</button>
                         </td>
                     </tr>
 
@@ -56,9 +81,10 @@
                         <td>3</td>
                         <td>Sueli Neiva</td>
                         <td>suelinei2454@gmail.com</td>
+                        <td><span class="badge bg-success">Ativo</span></td>
                         <td>
-                            <button class="btn">Editar</button>
-                            <button class="btn excluir">Excluir</button>
+                            <button class="btn btn-custom btn-sm btn-primary">Editar</button>
+                            <button class="btn-custom excluir btn-sm">Excluir</button>
                         </td>
                     </tr>
 
@@ -66,9 +92,10 @@
                         <td>4</td>
                         <td>João Cassio</td>
                         <td>joaobe224@gmail.com</td>
+                        <td><span class="badge bg-success">Ativo</span></td>
                         <td>
-                           <button class="btn">Editar</button> 
-                           <button class="btn excluir">Excluir</button>
+                           <button class="btn btn-custom btn-sm btn-primary">Editar</button> 
+                           <button class="btn-custom excluir btn-sm">Excluir</button>
                         </td>
                     </tr>
 
@@ -76,9 +103,10 @@
                         <td>5</td>
                         <td>Antonio Ribeiro</td>
                         <td>antoniocof21@gmail.com</td>
+                        <td><span class="badge bg-success">Ativo</span></td>
                         <td>
-                            <button class="btn">Editar</button>
-                            <button class="btn excluir">Excluir</button>
+                            <button class="btn btn-custom btn-sm btn-primary">Editar</button>
+                            <button class="btn-custom excluir btn-sm">Excluir</button>
                         </td>
                     </tr>
                 </tbody>

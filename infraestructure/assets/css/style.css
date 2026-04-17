@@ -49,6 +49,11 @@ h2 {
     letter-spacing: 2px;
 }
 
+h5 {
+    color: var(--ciano);
+    font-weight: bold;
+}
+
 /*Paragrafos*/
 p {
     max-width: 600px;
@@ -77,8 +82,9 @@ article {
     backdrop-filter: blur(5px); /* Efeito de vidro */
 }
 
+
 /* Botão Principal */
-.btn {
+.btn-custom {
     background-color: var(--ciano);
     color: var(--bg-escuro); /* Texto escuro no botão claro para ler melhor */
     padding: 12px 25px;
@@ -90,10 +96,34 @@ article {
     box-shadow: 0 4px 15px rgba(5, 187, 208, 0.3);
 }
 
-.btn:hover {
+.btn-custom:hover {
     transform: scale(1.05);
     box-shadow: 0 0 25px var(--ciano);
 
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: rgba(29, 22, 77, 0.95) !important;
+    border-bottom: 2px solid var(--ciano);
+    box-shadow: 0 2px 10px rgba(5, 187, 208, 0.2);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: var(--ciano) !important;
+    text-shadow: 0 0 10px rgba(5, 187, 208, 0.4);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--texto-claro) !important;
+    transition: 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--ciano) !important;
+    text-shadow: 0 0 10px rgba(5, 187, 208, 0.4);
 }
 
 /* Navegação */
@@ -191,12 +221,6 @@ form button{
     align-self: center;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    font-size: 12px;
-}
 
 th {
     background-color: var(--ciano);
@@ -205,19 +229,7 @@ th {
 }
 
 td .btn {
-    display: block;
-    width: 100%;
-    margin: 5px 0;
-}
-
-
-td {
-    padding: 10px;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-}
-
-tr:hover {
-    background-color: rgba(255,255,255,0.05);
+    margin: 2px;
 }
 
 .excluir {
@@ -238,7 +250,7 @@ tr:hover {
 
     table {
         font-size: 14px;
-    }
+    }   
 
 }
 
@@ -266,4 +278,10 @@ tr:hover {
     table{
         font-size: 16px;
     }
+}
+
+.card {
+    background-color: rgba(29, 22, 77, 0.8) !important;
+    border: 1px solid var(--ciano) !important;
+    color: var(--branco);
 }

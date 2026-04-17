@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROJETO WEB RICLEY</title>
 
+    <!--Link do Bootstrap   -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Importa um arquivo CSS externo para estilização da página -->
     <link rel="stylesheet" href="../assets/css/style.css">
 
@@ -14,8 +17,26 @@
 
 </head>
 <body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">🛠️ DeskFlow</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="painel.html">Painel</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!--Cabeçalho-->
-    <header>
+    <header class="text-center py-5">
     <!-- Titulo principal-->
     <h1>Bem vindo ao Sistema de Suporte Técnico de TI</h1>
 
@@ -28,16 +49,14 @@ sistemas ou redes, descrevendo suas necessidades de forma simples e objetiva.
     </header>
 
     <!--Principal-->
-    <main>
+    <main class="container">
 
-        <section>
+        <section class="text-center mb-5">
             <h2>Acesso a pagina de login</h2>
-            <a href="login.html">
-                <button class="btn">Login</button>
-            </a>
+            <a href="login.html" class="btn btn-custom">Login</a>
         </section>
 
-        <section>
+        <section class="text-center mb-5">
         <h2>Sobre o DeskFlow (Suporte de TI)</h2>
             <p>O DeskFlow é um sistema de suporte técnico que permite aos usuários registrar
             problemas relacionados a hardware, software e redes, facilitando o atendimento
@@ -45,31 +64,107 @@ sistemas ou redes, descrevendo suas necessidades de forma simples e objetiva.
 
         </section>
 
-        <section>
-            <h2>Funcionalidades</h2>
-            <article>
-            <h3>Cadastro de Problemas</h3>
-            <p>Usuários podem registrar problemas em computadores e redes.</p>
-        </article>
-       
-        <article>
-            <h3>Acompanhamento</h3>
-            <p>Permissaõ para o usuário verificar o status do seu chamado.</p>
-        </article>
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Funcionalidades</h2>
+            <div class="row g-3">
 
-        <article>
-            <h3>Resolução</h3>
-            <p>Técnicos registram as soluções aplicadas aos problemas.</p>
-        </article>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                                <h5>Cadastro de Problemas</h5>
+                                <p class="card-text">Usuários podem registrar problemas em computadores e redes.</p>
+                        </div>
+                    </div>
+                </div>
+       
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5>Acompanhamento</h5>
+                            <p class="card-text">Permissaõ para o usuário verificar o status do seu chamado.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5>Resolução</h5>
+                            <p class="card-text">Técnicos registram as soluções aplicadas aos problemas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Serviços-->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Serviços Disponíveis</h2>
+            <div class="row g-3">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5>🖥️ Manutenção de Computadores</h5>
+                            <p class="card-text">Reparação e manutenção preventiva de equipamentos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5>🌐 Problemas de Rede</h5>
+                            <p class="card-text">Suporte a conectividade e problemas de rede.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5>💻 Suporte a Software</h5>
+                            <p class="card-text">Assistência com aplicações e sistemas operacionais.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5>🔐 Problemas de Login</h5>
+                            <p class="card-text">Suporte a acesso e recuperação de credenciais.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5>🔧 Suporte a hardware</h5>
+                            <p class="card-text">Diagnóstico e reparo de componentes físicos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5>⚙️ Configuração de Sistema</h5>
+                            <p class="card-text">Setup e otimização de ambientes de trabalho.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     
     <!--Navegação de links-->
     <nav id="menu">
         <ul>
-            <li><a href="atividade-3.html" class="btn" rel="next" >Abrir a Atividade 3.</a></li>
-            <li><a href="sandbox.html" class="btn" rel="next" >Abrir o sandbox</a></li>
-            <li><a href="cores.html" class="btn" rel="next" >Abrir a Pagina de cores</a></li>
+            <li><a href="atividade-3.html" class=" btn btn-custom" rel="next" >Abrir a Atividade 3.</a></li>
+            <li><a href="sandbox.html" class="btn btn-custom" rel="next" >Abrir o sandbox</a></li>
+            <li><a href="cores.html" class="btn btn-custom" rel="next" >Abrir a Pagina de cores</a></li>
         </ul>    
     </nav>
 
@@ -77,5 +172,8 @@ sistemas ou redes, descrevendo suas necessidades de forma simples e objetiva.
     <footer>
         <p>© 2026 - Suporte Técnico de TI</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
